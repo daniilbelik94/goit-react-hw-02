@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <Description />
-      <Options onUpdateFeedback={onUpdateFeedback} onReset={reset} />
+      <Options onUpdateFeedback={onUpdateFeedback} onReset={reset} totalFeedback={total} />
       {total > 0 ? (
         <Feedback
           good={feedback.good}
